@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+See@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 :root {
     /* primary colors */
@@ -86,7 +86,7 @@ button {
 
 button:hover {
     background-color: inherit;
-    border: 2px solid #fff;
+    outline: 2px solid #fff;
     cursor: pointer;
     color: var(--color-Very-light-gray-background-headings-buttons);
 }
