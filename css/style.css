@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* primary colors */
+    --color-Bright-orange: hsl(31, 77%, 52%);
+    --color-Dark-cyan: hsl(184, 100%, 22%);
+    --color-Very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral colors */
+    --color-Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --color-Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-size: 0.9375rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+}
+
+.first-panel {
+    padding: 4rem;
+    background-color: var(--color-Bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.second-panel {
+    padding: 4rem;
+    background-color: var(--color-Dark-cyan);
+}
+
+.third-panel {
+    border-radius: 0 10px 10px 0;
+    padding: 4rem;
+    background-color: var(--color-Very-dark-cyan);
+}
+
+h1 {
+    color: var(--color-Very-light-gray-background-headings-buttons);
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+p {
+    margin-bottom: 4rem;
+    line-height: 1.5;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--color-Transparent-white-paragraphs);
+}
+
+button {
+    font-weight: 700;
+    border-radius: 30px;
+    color: inherit;
+    border: none;
+    padding: 1rem 3rem;
+    background-color: var(--color-Very-light-gray-background-headings-buttons);
+}
+
+.firstbtn {
+    color: var(--color-Bright-orange);
+}
+
+.secondbtn {
+    color: var(--color-Dark-cyan);
+}
+
+.thirdbtn {
+    color: var(--color-Very-dark-cyan);
+}
+
+button:hover {
+    background-color: inherit;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: var(--color-Very-light-gray-background-headings-buttons);
+}
+
+@media (max-width: 400px) {
+    body {
+        height: 200vh;
+        margin: 3rem auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .first-panel {
+        padding: 3rem;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .second-panel {
+        padding: 3rem;
+    }
+    
+    .third-panel {
+        border-radius:0 0 10px 10px  ;
+        padding: 3rem;
+    }
+}
