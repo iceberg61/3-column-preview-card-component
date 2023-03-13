@@ -91,7 +91,7 @@ button:hover {
     color: var(--color-Very-light-gray-background-headings-buttons);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
     body {
         height: 200vh;
         margin: 3rem auto;
